@@ -18,7 +18,7 @@ const CheckGroup = ({ values, selectedValues, onChange }) => {
     onChange(newSelectedValues);
   };
   return (
-    <div className="flex flex-col gap-2 justify-center py-8 w-full">
+    <div className="flex flex-col gap-2 justify-center py-8">
       <div
          className="p-3"
         >
