@@ -1,14 +1,16 @@
-import CheckButtons from "./checkButtons";
-import App from "./radio";
-import RadioButtons from "./radioButtons";
+import RadioGroupComponent from './radioGroup'; // Ensure correct import path
+import CheckBoxPage from './CheckBoxPage'; // Ensure correct import path
 
-export default function MultiChoice(){
+export default function Answers() {
+  const vals = ['Dynami', 'This is radio button', 'Refernce', 'Static Inernet Protocol'];
 
-    return(
-        <div className="flex items-center justify-center py-8">
-            <App />
-        </div>
+  // Check if 'Dynamic' is in the vals array
+  const hasDynamic = vals.includes('Dynamic');
 
-    );
-    
+  if (hasDynamic == true) {
+    return <RadioGroupComponent vals={vals} />;
+  } else {
+    return <CheckBoxPage values={vals}/>;
+  }
+  
 }
