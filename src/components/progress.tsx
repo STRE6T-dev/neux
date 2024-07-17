@@ -28,6 +28,7 @@ const Progress = () => {
   
     const handleStop = () => {
       // Implement your finish test logic here
+      // Send Last Time and answers to server
     };
   
     return (
@@ -58,7 +59,7 @@ const Progress = () => {
           />
         </div>
   
-        <Button onClick={handleStop}>Finish Test</Button>
+        <Button className="bg-white" onClick={handleStop}>Finish Test</Button>
       </div>
     );
   };
