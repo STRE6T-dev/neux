@@ -35,7 +35,7 @@ const Progress = () => {
       <div className="flex justify-around items-center my-2 p-4 overflow-auto">
         <h3>1 / 90</h3>
   
-        <div className="flex-grow min-w-[400px] mx-2">
+        <div className="flex-grow-0 min-w-[500px] mx-2">
           <ProgressBar />
         </div>
   

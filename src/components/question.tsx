@@ -17,7 +17,7 @@ export default function Question(){
             
             
             <div className={workSans.className}>
-                <p className="text-center text-base text-wrap bg-gradient-to-br transition-all from-black from-[30%] to-black/40 bg-clip-text py-1">
+                <p className="text-center text-wrap bg-gradient-to-br transition-all from-black from-[30%] to-black/40 bg-clip-text text-base py-1 font-medium leading-none">
                 You are configuring a new client workstation on the network. Which type of IP address should you
                 configure it with?                
                 </p>
