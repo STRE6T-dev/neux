@@ -18,7 +18,7 @@ export default function Question(){
             />
             
             <div className={black_hans.className}>
-                <p className="text-center text-sm">
+                <p className="text-center text-sm text-wrap">
                 You are configuring a new client workstation on the network. Which type of IP address should you
                 configure it with?                
                 </p>

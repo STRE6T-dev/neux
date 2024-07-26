@@ -1,12 +1,19 @@
-// app/providers.tsx
-'use client'
+"use client";
 
-import {NextUIProvider} from '@nextui-org/react'
+import {type ReactNode} from "react";
+import {NextUIProvider} from "@nextui-org/react";
 
-export function Providers({children}: { children: React.ReactNode }) {
+export function AppProvider(props: AppProviderProps) {
+  const {children, className} = props;
+
   return (
-    <NextUIProvider>
+    <NextUIProvider className={className} disableAnimation>
       {children}
     </NextUIProvider>
-  )
+  );
+}
+
+interface AppProviderProps {
+  children: ReactNode;
+  className?: string;
 }
