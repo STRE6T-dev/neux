@@ -24,6 +24,7 @@ const CheckGroup = ({ values, selectedValues, onChange }) => {
         >
           {values.map((value) => (
           <Checkbox
+            size="md"
             key={value}
             checked={selectedValues.includes(value)}
             onChange={() => handleChange(value)}

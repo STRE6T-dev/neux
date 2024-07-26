@@ -7,7 +7,7 @@ import { Button } from "@nextui-org/button";
 
 export default function Header() {
   return (
-    <Navbar className="bg-white ">
+    <Navbar maxWidth="full"  isBordered position="sticky" className="bg-white pos ">
       <NavbarBrand>
         <AcmeLogo />
         <Link 
